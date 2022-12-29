@@ -23,7 +23,10 @@ resource "aws_iam_role" "ghatesting" {
 
 data "aws_iam_policy_document" "trust_policy" {
   statement {
-    actions = ["sts:AssumeRole"]
+    actions = [
+      "sts:AssumeRole",
+      "sts:TagSession"
+    ]
 
     principals {
       type        = "AWS"

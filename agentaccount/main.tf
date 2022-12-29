@@ -69,7 +69,10 @@ resource "aws_iam_role_policy" "ghaagent_policy" {
 
 data "aws_iam_policy_document" "ghaagent_policy" {
   statement {
-    actions = ["sts:AssumeRole"]
+    actions = [
+      "sts:AssumeRole",
+      "sts:TagSession"
+    ]
     resources = ["arn:aws:iam::${var.gha_testing_account_id}:role/ghatesting-sandbox"]
   }
 }
