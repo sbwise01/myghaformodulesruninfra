@@ -21,7 +21,6 @@ variable "gha_agent_repo_url" {
 }
 
 variable "gha_agent_token" {
-  default = "ADAXESL7FTYTOYJJ3TZOT2TDVXJRQ"
 }
 
 variable "subnet_id" {
