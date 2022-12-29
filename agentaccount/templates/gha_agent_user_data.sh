@@ -7,12 +7,6 @@ curl -o actions-runner-linux-x64-2.299.1.tar.gz -L https://github.com/actions/ru
 
 tar xzf ./actions-runner-linux-x64-2.299.1.tar.gz
 
-curl -o terraform_1.1.0_linux_amd64.zip  -L https://releases.hashicorp.com/terraform/1.1.0/terraform_1.1.0_linux_amd64.zip
-
-unzip terraform_1.1.0_linux_amd64.zip
-
-mv terraform /usr/local/bin/terraform
-
 chown -R ec2-user.ec2-user /var/actions-runner
 
 ## Authn configuration

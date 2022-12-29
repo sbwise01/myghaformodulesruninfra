@@ -17,7 +17,7 @@ variable "gha_testing_account_id" {
 }
 
 variable "gha_agent_repo_url" {
-  default = "https://github.com/sbwise01/myghaformodules"
+  default = "https://github.com/sbwise01/terraform-aws-myghaformodules"
 }
 
 variable "gha_agent_token" {
